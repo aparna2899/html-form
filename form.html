@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: rgba(12, 24, 131, 0.856);
+            height: 1000px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .form{
+            display: block;
+            width: 31%;
+            background: white;
+            margin: 100px 500px;
+            margin-bottom: 0%;
+            padding: 20px 20px;
+        }
+        .form h2{
+            text-align: center;
+        }
+        .form p{
+            text-align: center;
+            white-space: nowrap;
+        }
+        
+        input[type=button]{
+            background-color: #63af4c;
+            width: 100%;
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            cursor: pointer;
+            text-align: center;
+            margin: 4px 2px;
+        }
+        .form .container input{
+            width: 100%;
+        }
+        .container{
+            color: rgba(0, 0, 0, 0.678);
+        }
+        .p2 p{
+            color: white;
+            text-align: center;
+        }
+        .p2 a{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2>Sign Up</h2>
+        <p>It's free and only takes a minute</p>
+        <br>
+        <form action="#">
+            <div class="container">
+                <div>
+                    <label for="fname" id="fname">First Name</label><br>
+                    <input type="text" id="fname" name="name">
+                </div><br>
+                <div>
+                    <label for="lname" id="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="name">
+                </div><br>
+                <div>
+                    <label for="email" id="email">Email</label><br>
+                    <input type="email" name="email" id="email">
+                </div><br>
+                <div>
+                    <label for="password" id="password">Password</label><br>
+                    <input type="password" name="password" id="password">
+                </div><br>
+                <div>
+                    <label for="password" id="cpassword">Confirm Password</label><br>
+                    <input type="password" name="cpassword" id="cpassword">
+                </div><br>
+            </div>
+                <div>
+                    <input type="button" value="Sign Up ">
+                 </div>
+                <p>
+                    By clicking the Sign Up button, you agree to our <br>
+                    <a href="#">Terms & Conditions</a> and 
+                    <a href="#">Privacy Poliy</a>
+                </p>
+        </form>
+    </div>
+    <div class="p2">
+        <p>Already have an account?
+            <a href="#">Login Here</a>
+        </p>
+    </div>
+</body>
+</html>
